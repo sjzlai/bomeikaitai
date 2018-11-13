@@ -205,12 +205,12 @@
                 </li>
 
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list" >
                         <i class="am-icon-wpforms"></i>
                         <span>表单</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" >
+                    <ul class="tpl-left-nav-sub-menu" style="display: block;">
                         <li>
                             <a href="form-amazeui.html">
                                 <i class="am-icon-angle-right"></i>

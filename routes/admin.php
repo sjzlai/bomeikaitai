@@ -9,4 +9,6 @@
     Route::group(['prefix'=>'admin','namespace'=>'Admin','midlleware'=>['web','login']],function (){
        Route::get('/index','IndexController@index');
        Route::get('/product','ProductController@ProductList');
+       Route::get('/product/create','ProductController@create');
+       Route::post('/product/store','ProductController@store');
     });

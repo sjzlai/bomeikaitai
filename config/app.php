@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Overtrue\LaravelUEditor\UEditorServiceProvider::class, // 富文本编辑器
 
         /*
          * Application Service Providers...
@@ -159,7 +160,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Overtrue\LaravelUEditor\UEditorServiceProvider::class, // 富文本编辑器
+
     ],
 
     /*

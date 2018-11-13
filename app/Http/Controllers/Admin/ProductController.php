@@ -14,4 +14,17 @@ class ProductController extends Controller
         return view('admin.product.list');
     }
 
+    public function create()
+    {
+        return view('admin.product.create');
+    }
+
+    public function store(Request $request)
+    {
+        $data = $request->except('_token','img');
+        $data['content'] = htmlspecialchars($data['content']);
+
+        dd($data);
+    }
+
 }
