@@ -1,8 +1,5 @@
 @extends('admin.layout.app')
 @include('vendor.ueditor.assets')
-@section('style')
-    <link rel="stylesheet" href="{{asset('css/uploads.css')}}">
-@endsection
 @section('content')
 
         <div class="tpl-content-wrapper">
@@ -34,25 +31,25 @@
 
                     <div class="am-g">
                         <div class="tpl-form-body tpl-form-line">
-                            <form class="am-form tpl-form-line-form" action="{{url('admin/product/store')}}" method="post" enctype="multipart/form-data">
+                            <form class="am-form tpl-form-line-form" action="{{url('admin/product/store')}}" method="post" enctype="">
                                 {!! csrf_field() !!}
                                 <div class="am-form-group">
                                     <label for="user-name" class="am-u-sm-3 am-form-label">标题 <span class="tpl-form-line-small-title">Title</span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="title" value="{{old('title')}}" class="tpl-form-input" id="user-name" placeholder="请输入标题文字">
+                                        <input type="text" name="prod_name" value="{{old('prod_name')}}" class="tpl-form-input" id="user-name" placeholder="请输入标题文字">
                                         <small>请填写标题文字10-20字左右。</small>
                                     </div>
                                 </div>
 
-                                <div class="am-form-group">
+                                {{--<div class="am-form-group">
                                     <label for="user-email" class="am-u-sm-3 am-form-label">发布时间 <span class="tpl-form-line-small-title">Time</span></label>
                                     <div class="am-u-sm-9">
                                         <input type="text" class="am-form-field tpl-form-no-bg" value="{{old('datetime')}}" name="datetime" placeholder="发布时间" data-am-datepicker="" readonly/>
                                         <small>发布时间为必填</small>
                                     </div>
-                                </div>
+                                </div>--}}
 
-                                <div class="am-form-group">
+                               {{-- <div class="am-form-group">
                                     <label for="user-weibo" class="am-u-sm-3 am-form-label">封面图 <span class="tpl-form-line-small-title">Images</span></label>
                                     <div class="am-u-sm-9">
                                         <div class="am-form-group am-form-file">
@@ -60,12 +57,16 @@
                                         </div>
                                         <div id="imgBox"></div>
                                     </div>
-                                </div>
+                                </div>--}}
 
                                 <div class="am-form-group">
                                     <label for="user-weibo" class="am-u-sm-3 am-form-label">添加分类 <span class="tpl-form-line-small-title">Type</span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-weibo" name="cate" placeholder="请添加分类用点号隔开">
+                                        {{--<input type="text" id="user-weibo" name="prod_cid" placeholder="请添加分类用点号隔开">--}}
+                                        <select  id="user-weibo" name="prod_cid">
+                                            <option value="0">请选择分类</option>
+
+                                        </select>
                                         <div>
 
                                         </div>
@@ -73,10 +74,10 @@
                                 </div>
 
                                 <div class="am-form-group">
-                                    <label for="user-intro" class="am-u-sm-3 am-form-label">文章内容</label>
+                                    <label for="user-intro" class="am-u-sm-3 am-form-label">产品内容 <span  class="tpl-form-line-small-title"> Content</span></label>
                                     <div class="am-u-sm-9">
                                         <!-- 编辑器容器 -->
-                                        <script id="container" name="content" type="text/plain"></script>
+                                        <script id="container" name="prod_intr" type="text/plain"></script>
                                         {{--<textarea class="" rows="10" id="user-intro" placeholder="请输入文章内容"></textarea>--}}
                                     </div>
                                 </div>
@@ -95,22 +96,13 @@
             </div>
         </div>
         @section('script')
-            <script src="{{asset('js/uploadImg.js')}}" type="text/javascript" charset="utf-8"></script>
-            <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
         <!-- 实例化编辑器 -->
         <script type="text/javascript">
             var ue = UE.getEditor('container');
             ue.ready(function() {
                 ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
             });
-            imgUpload({
-                inputId:'file', //input框id
-                imgBox:'imgBox', //图片容器id
-                buttonId:'btn', //提交按钮id
-                //upUrl:'/product/store',  //提交地址
-                data:'file1', //参数名
-                num:"5"//上传个数
-            })
         </script>
         @endsection
 @endsection

@@ -27,7 +27,7 @@ function imgUpload(obj) {
 		for(var i=0;i<imgFile.length;i++){
 			fd.append(obj.data+"[]",imgFile[i]);
 		}
-		submitPicture(obj.upUrl, fd);
+		//submitPicture(obj.upUrl, fd);
 	})
 }
 //图片展示
@@ -63,11 +63,13 @@ function submitPicture(url,data) {
 	  	console.log(p);
 	}
 	if(url&&data){
+    	var id = $("input[name='goods_id']");
 		$.ajax({
+
 			type: "post",
 			url: url,
 			async: true,
-			data: data,
+			data: [data,id],
 			processData: false,
 			contentType: false,
 			success: function(dat) {

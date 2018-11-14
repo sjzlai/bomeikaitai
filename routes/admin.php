@@ -11,4 +11,6 @@
        Route::get('/product','ProductController@ProductList');
        Route::get('/product/create','ProductController@create');
        Route::post('/product/store','ProductController@store');
+       Route::get('/product/imgview/{goods_id}','ProductController@imgView');
+       Route::post('/product/imgStore','ProductController@imgStore');
     });

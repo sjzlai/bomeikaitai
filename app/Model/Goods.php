@@ -12,4 +12,8 @@ class Goods extends Model
     public  $timestamps = true;
 
 
+    public function AllList()
+    {
+        return self::all();
+    }
 }
