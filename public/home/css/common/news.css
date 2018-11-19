@@ -1,0 +1,95 @@
+@media (min-width: 992px) {
+    
+    .news_lists .news_collect {
+        border-bottom: 1px dashed #CCCCCC;
+        padding:1.5em 0;
+    }
+    
+    .pages .goto_list {
+        text-align: right;
+    }
+    .company_news .news_right .detail_content {
+        margin-bottom: 15em;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .news_lists .news_collect {
+        border-bottom: 1px dashed #CCCCCC;
+        padding:1.5em 0;
+    }
+    
+    .pages .goto_list {
+        text-align: right;
+    }
+    .company_news .news_right .detail_content {
+        margin-bottom: 15em;
+    }
+}
+@media (max-width: 767px) {
+    .company_news .right_side .pager {
+        padding:2em 0;
+    }
+    .company_news .news_right .bgc {
+        padding:2em 0;
+    }
+    .company_news .news_right .bgc h4, .company_news .news_right .bgc h5 {
+        text-align: center;
+    }
+    
+    .pages .goto_list {
+        text-align: center;
+    }
+}
+/*新闻主页*/
+p {padding:0;margin:0;}
+.news_lists .news_img {
+    border:1px solid #CCCCCC;
+    padding:.3em;
+}
+.company_news .right_side .news_img>img {
+    width:100%;
+}
+.news_lists .news_intro h4 {
+    font-weight: bold;
+}
+.news_lists .news_intro p {
+    line-height: 1.5em;
+    max-height: 4.5em;
+    overflow: hidden;
+}
+.news_lists .news_intro h5 {
+    margin-top:1em;
+    color:#F8B400;
+}
+/*分页*/
+.company_news .right_side .pages {
+    font-size:1.2em;
+}
+.company_news .right_side .pager {
+    margin-top:2em;
+}
+.company_news .right_side .pager li>a {
+    border-radius: .3em;
+    border:0;
+    background-color: #E5E5E5;
+}
+.company_news .right_side .pager li>a.active, 
+.company_news .right_side .pager li>a:hover{
+    background-color: #F8B400;
+    color:#fff;
+}
+
+/*新闻详情*/
+.company_news .news_right .news_title {
+    font-weight: bold;
+}
+.company_news .news_right .news_time {
+    color:#B3B3B3;
+} 
+.company_news .news_right .news_img>img {
+    margin:1.5em 0;
+}
+.company_news .news_right .detail_content {
+    line-height: 1.5em;
+}

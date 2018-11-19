@@ -1,0 +1,95 @@
+@media (min-width: 992px) {
+    .user_info .sub_button {
+        position: absolute;
+        bottom: .4em;
+        right: 0;
+        text-align: right;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .user_info .sub_button {
+        margin:2em auto;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .user_info .sub_button {
+        margin:2em auto;
+        text-align: center;
+    }
+    .user_info .sub_info {
+        padding:0 1em;
+    }
+}
+/*联系我们*/
+.contact_us .contact_right .bgc .msg {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.contact_us .contact_right .bgc .our_msg {
+    padding-bottom: 2em;
+}
+.contact_us .contact_right .bgc .msg_detail {
+    line-height: 1.8em;
+    color:#78828D;
+    margin:1em auto;
+}
+.contact_methods .methods_lists>li {
+    padding:.5em 0;
+}
+.contact_methods .methods_lists>li>span.fir {
+    font-size:1.8em;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.contact_methods .methods_lists>li>span.sec {
+    font-size:1.4em;
+    font-family: "宋体";
+    color: #78828D;
+}
+.contact_methods .methods_lists>li>i.glyphicon {
+    color:#F8B400;
+    font-size: 2.2em;
+    margin-right:.5em;
+    position: relative;
+    top:.2em;
+}
+.contact_methods .methods_lists>li .icon_small>i.glyphicon {
+    border:1px solid #78828D;
+    border-radius: 50%;
+    padding:.3em;
+    margin-right: .4em;
+    color: #78828D;
+}
+/*表单样式*/
+.user_info input[type=text], .user_info textarea {
+    width:100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top:1.5em;
+    padding:.5em;
+}
+.user_info textarea {
+    min-height: 6em;
+    max-height: 6em;
+}
+.sub_info {
+    position: relative;
+}
+.user_info .sub_button>input[type=button] {
+    background-color: #F5F5F5;
+    border: 1px solid #F8B400;
+    border-radius: .6em;
+    color:#F8B400;
+    padding:.5em 3em;
+    font-size: 1em;
+}
+.user_info .sub_button>input[type=button]:hover {
+    background-color: #F8B400;
+    color:#fff;
+}
+.contact_us .contact_right .contact_add>img {
+    width:100%;
+    border:  1px solid #EDEDED;
+}

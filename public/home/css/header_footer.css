@@ -1,0 +1,103 @@
+@media (min-width: 992px) {
+    /*页头*/
+    .index_nav {
+        background-color:rgba( 214,220,230,.6);
+    }
+    #menu>ul>li {
+        padding-top:1.4em;
+    }
+    #menu>ul>li>a {
+        padding:0;
+        height:2em;
+        line-height: 2em;
+        color:black;
+        font-size:1.2em;
+        margin-left:1em;
+        width:6em;
+    }
+    #menu .nav li a.active,#menu .nav li a:hover {
+        background-color: #F8B500;
+        color:#fff;
+        border-radius: 10px;
+    }
+    /*底部*/
+    .footer .bottom_path>li {
+        float:left;
+        width:16.66%;
+        color:#fff;
+        border-right:1px solid #486480;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    /*页头*/
+    .index_nav {
+        background-color:rgba( 214,220,230,.6);
+    }
+    #menu>ul>li {
+        padding-top:1.4em;
+    }
+    #menu>ul>li>a {
+        padding:0;
+        height:2em;
+        line-height: 2em;
+        color:black;
+        font-size:1.1em;
+        margin-left:0.5em;
+        width:5em;
+    }
+    #menu .nav li a.active,#menu .nav li a:hover {
+        background-color: #F8B500;
+        color:#fff;
+        border-radius: 10px;
+    }
+    /*底部*/
+    .footer .bottom_path>li {
+        float:left;
+        width:16.66%;
+        color:#fff;
+        border-right:1px solid #486480;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        padding-top:5em;
+    }
+    /*页头*/
+    .index_nav {
+        background-color:#ACB5C5;
+    }
+    #menu .nav li a.active{
+        color:#000;
+    }
+    /*底部*/
+    .footer .bottom_path>li {
+        float:left;
+        width:16.66%;
+        color:#fff;
+        border-right:1px solid #486480;
+    }
+}
+/*页头*/
+.navbar {border:0;}
+.my-logo>img {
+    height:5.1em;
+}
+/*底部导航*/
+.footer {
+    width:100%;
+    background-color:#383E46;
+}
+.bottom_logo {
+    padding-top:1.5em;
+    padding-bottom:1.5em;
+}
+.footer .bottom_logo>img {
+    width:10em;
+}
+.footer .bottom_path>li:last-child {
+    border:0;
+}
+.footer .beian>p {
+    color:#fff;
+    margin:2em auto;
+}

@@ -1568,10 +1568,10 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-box-orient: vertical;
-    line-height: 1.6em;
-    -webkit-line-clamp: 2;
-    max-height: 3em;
+    /* -webkit-box-orient: vertical;
+   * line-height: 1.6em;
+     -webkit-line-clamp: 2;
+     max-height: 3em;*/
 }
 
 .tpl-table-images-content .tpl-i-more {}

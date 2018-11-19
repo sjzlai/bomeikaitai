@@ -1,0 +1,457 @@
+@media (min-width: 1200px) {
+    .about_us .content .details {
+        max-height: 10em;
+        overflow:hidden;
+    }
+    .product .product_bar>span {
+        padding:.5em 2em;
+    }
+    .product .product_imgs .left_side img {width:88%;}
+    .product .product_imgs .right_side img {width:91.6%;}
+    .product .product_imgs .img_one {
+        
+    }
+    /*产品图片*/
+    .product .product_imgs .img_two {
+        margin-top:1.4em;
+    }
+    .product .product_imgs .img_two img {
+        width:89.1%;
+    }
+    .product .product_imgs .img_three {
+        margin-top:1.4em;
+        position: relative;
+        left:-3.5em;
+    }
+    .product .product_imgs .img_three img {
+        width:89.1%;
+    }
+    .product .product_imgs .img_four {
+
+    }
+    .product .product_imgs .img_five {
+        margin-top:1.4em;
+    }
+    .product .product_imgs .img_six {
+        margin-top:1.4em;
+    }
+    .product .product_imgs .img_six img {
+        width:23.5em;
+        height:14em;
+    }
+    /*蒙层*/
+    .img_mask {
+        position:absolute;
+        top:0;
+        left:1.1em;
+        height:100%;
+        background-color:rgba(120,126,136,.6);
+    }
+    .img_one .img_mask {
+        width:84.8%;
+    }
+    .img_mask img {
+        position: absolute;
+        bottom:-.1em;
+        left:0;
+    }
+    .img_one .img_mask .product_name {
+        margin-top:6em;
+    }
+    .product_name {color:#F8B500;}
+    .product_work {color:#fff;}
+    .click_check a {
+        color:#fff;
+        font-size:1.3em;
+    }
+    .click_check {
+        position: absolute;
+        bottom:3em;
+        width:100%;
+    }
+    .click_check .right_corner {
+        display: inline-block;
+        width: 0px; 
+        height: 0px;
+        border: .5em solid #F8B500;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+        border-right-color: transparent;
+        margin-left:1em;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .about_us .content .details {
+        max-height: 10em;
+        overflow:hidden;
+    }
+    .product .product_bar>span {
+        padding:.5em 2em;
+    }
+    .product .product_imgs .left_side img {width:100%;}
+    .product .product_imgs .right_side img {width:100%;}
+    .product .product_imgs .img_one {
+        
+    }
+    .product .product_imgs .img_two {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_two img {
+        
+    }
+    .product .product_imgs .img_three {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_three img {
+        /*width:89.1%;*/
+    }
+    .product .product_imgs .img_four {
+
+    }
+    .product .product_imgs .img_five {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_six {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_six img {
+        
+    }
+        /*蒙层*/
+    .img_one .img_mask {
+        width:95.5%;
+    }
+    .img_mask {
+        position:absolute;
+        top:0;
+        left:1.1em;
+        height:100%;
+        background-color:rgba(120,126,136,.6);
+    }
+    .img_mask img {
+        position: absolute;
+        bottom:-.1em;
+        left:0;
+    }
+    .img_one .img_mask .product_name {
+        margin-top:6em;
+    }
+    .product_name {color:#F8B500;}
+    .product_work {color:#fff;}
+    .click_check a {
+        color:#fff;
+        font-size:1.3em;
+    }
+    .click_check {
+        position: absolute;
+        bottom:3em;
+        width:100%;
+    }
+    .click_check .right_corner {
+        display: inline-block;
+        width: 0px; 
+        height: 0px;
+        border: .5em solid #F8B500;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+        border-right-color: transparent;
+        margin-left:1em;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .about_us .content .details {
+        max-height: 6em;
+        overflow:hidden;
+    }
+    .news .news_img {
+        margin-top:2em;
+    }
+    .product .product_bar>span {
+        padding:.5em 1.5em;
+    }
+    /*产品图片*/
+    .product .product_imgs .left_side img {width:100%;}
+    .product .product_imgs .right_side img {width:100%;}
+    .product .product_imgs .img_one {
+        
+    }
+    .product .product_imgs .img_two {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_two img {
+        
+    }
+    .product .product_imgs .img_three {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_three img {
+        /*width:89.1%;*/
+    }
+    .product .product_imgs .img_four {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_five {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_six {
+        margin-top:2.6em;
+    }
+    .product .product_imgs .img_six img {
+        
+    }
+     /*蒙层*/
+    .img_mask {
+        position:absolute;
+        top:0;
+        left:1.1em;
+        height:100%;
+        background-color:rgba(120,126,136,.6);
+    }
+    .img_one .img_mask {
+        width:96%;
+    }
+    .img_mask img {
+        position: absolute;
+        bottom:-.1em;
+        left:0;
+    }
+    .img_one .img_mask .product_name {
+        margin-top:6em;
+    }
+    .product_name {color:#F8B500;}
+    .product_work {color:#fff;}
+    .click_check a {
+        color:#fff;
+        font-size:1.3em;
+    }
+    .click_check {
+        position: absolute;
+        bottom:3em;
+        width:100%;
+    }
+    .click_check .right_corner {
+        display: inline-block;
+        width: 0px; 
+        height: 0px;
+        border: .5em solid #F8B500;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+        border-right-color: transparent;
+        margin-left:1em;
+    }
+}
+@media (max-width: 767px) {
+    .about_us .content .details {
+        max-height: 15em;
+        overflow:hidden;
+    }
+    .about_us .more {
+        margin-bottom: 2em;
+    }
+    .product .product_bar>span {
+        padding:.4em 1em;
+    }
+    /*产品图片*/
+    .product .product_imgs .left_side img {width:100%;}
+    .product .product_imgs .right_side img {width:100%;}
+    .product .product_imgs .img_one {
+        
+    }
+    .product .product_imgs .img_two {
+        margin-top:1em;
+    }
+    .product .product_imgs .img_two img {
+        
+    }
+    .product .product_imgs .img_three {
+        margin-top:1em;
+    }
+    .product .product_imgs .img_three img {
+        /*width:89.1%;*/
+    }
+    .product .product_imgs .img_four {
+        margin-top:1em;
+    }
+    .product .product_imgs .img_five {
+        margin-top:1em;
+    }
+    .product .product_imgs .img_six {
+        margin-top:1em;
+    }
+    .product .product_imgs .img_six img {
+        
+    }
+    /*蒙层*/
+    .img_mask {
+        position:absolute;
+        top:0;
+        left:1em;
+        height:100%;
+        background-color:rgba(120,126,136,.6);
+    }
+    .img_one .img_mask {
+        width:92.2%;
+    }
+    .img_one .img_mask .product_name {
+        margin-top:2em;
+    }
+    .img_mask img {
+        position: absolute;
+        bottom:-.1em;
+        left:0;
+    }
+    .product_name {color:#F8B500;}
+    .product_work {color:#fff;}
+    .click_check a {
+        color:#fff;
+        font-size:1em;
+    }
+    .click_check {
+        position: absolute;
+        bottom:1em;
+        width:100%;
+    }
+    .click_check .right_corner {
+        display: inline-block;
+        width: 0px; 
+        height: 0px;
+        border: .5em solid #F8B500;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #fff;
+        border-right-color: transparent;
+        margin-left:1em;
+    }
+}
+/*公共样式*/
+.banner_img {
+    position: relative;
+}
+.banner_img .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, .2)
+}
+.banner_img>img {
+    width:100%;
+}
+.title h3:before {
+    content:"—";
+    font-size:1.3em; 
+    margin-right:.7em;
+}
+.title h3:after {
+    content:"—";
+    font-size:1.3em;
+    margin-left:.7em;
+}
+/*关于博美*/
+.corner {
+    display: inline-block;
+    width: 0px; 
+    height: 0px;
+    border: .9em solid #F8B500;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.my-main>div.container{
+    margin-top:4em;
+    margin-bottom:4em;
+}
+.content {
+    margin-top:4em;
+}
+.about_us .title p {
+    margin-top:.6em;
+    font-size: 1.15em;
+}
+.about_us .content .text-left {
+    margin-bottom: 1.8em;
+}
+.about_us .content .subtitle {
+    font-size: 1.4em;
+}
+.about_us .content .subtitle_small {
+    font-size: 1.1em;
+}
+.about_us .content .about_img {
+    width:100%;
+}
+.more>span:hover {
+    color:#fff;
+    background-color: #F8B500;
+    border-color:#F8B500;
+}
+.more>span {
+    display: inline-block;
+    padding:.5em 2em;
+    margin-top:2em;
+    border:1px solid #F8B500;
+    color:#F8B500;
+    border-radius: 8px;
+    text-align: center;
+}
+.more>span>a {
+    color:inherit;
+}
+/*公司新闻*/
+.company_news {
+    padding-top:2em;
+    padding-bottom:3em;
+    width:100%;
+    background-color: #F7F7F7;
+}
+.news .news_img {
+    width:100%;
+}
+.article_lists {
+    margin:2em auto;
+}
+.article_lists .article_title:before {
+    content:"●";
+    display: inline-block;
+    font-size:.8em;
+    position: relative;
+    top:-0.2em;
+    color:#F8B500;
+}
+.article_lists .article_time {
+    float: right;
+}
+.title_list {
+    color:#000;
+}
+.article_time, .article_detail {
+    color:#B3B3B3;
+}
+.article_lists .article_detail {
+    padding-left:1em;
+}
+/*产品*/
+.product .product_bar>span {
+    display: inline-block;
+    margin-top:2em;
+    border-radius: 8px;
+    text-align: center;
+    border:1px solid #000;
+    color:#000;
+    margin-right:.5em;
+}
+.product .product_bar>span.active, .product .product_bar>span:hover {
+    color:#fff;
+    background-color: #F8B500;
+    border-color:#F8B500;
+}
+.product .product_bar>span>a {
+    color:inherit;
+}
+.product_imgs {
+    margin-top:2em;
+}

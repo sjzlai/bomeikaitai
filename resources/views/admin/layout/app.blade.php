@@ -179,26 +179,11 @@
                                 <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                             </a>
 
-                            <a href="table-images-list.html">
+                            <a href="{{url('admin/img')}}">
                                 <i class="am-icon-angle-right"></i>
-                                <span>图片表格</span>
+                                <span>图片管理</span>
                                 <i class="tpl-left-nav-content tpl-badge-success">
-                                    18
                                 </i> </a>
-
-                            <a href="form-news.html">
-                                <i class="am-icon-angle-right"></i>
-                                <span>消息列表</span>
-                                <i class="tpl-left-nav-content tpl-badge-primary">
-                                    5
-                                </i>
-                            </a>
-
-                            <a href="form-news-list.html">
-                                <i class="am-icon-angle-right"></i>
-                                <span>文字列表</span>
-
-                            </a>
 
                         </li>
                     </ul>
@@ -207,21 +192,41 @@
                 <li class="tpl-left-nav-item">
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list" >
                         <i class="am-icon-wpforms"></i>
-                        <span>表单</span>
+                        <span>新闻</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
                     </a>
                     <ul class="tpl-left-nav-sub-menu" style="display: block;">
                         <li>
-                            <a href="form-amazeui.html">
+                            <a href="{{url('admin/news')}}">
                                 <i class="am-icon-angle-right"></i>
-                                <span>Amaze UI 表单</span>
+                                <span>新闻列表</span>
                                 <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                             </a>
-
-                            <a href="form-line.html">
+                           {{-- <a href="form-line.html">
                                 <i class="am-icon-angle-right"></i>
                                 <span>线条表单</span>
+                            </a>--}}
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list" >
+                        <i class="am-icon-wpforms"></i>
+                        <span>公司</span>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                    </a>
+                    <ul class="tpl-left-nav-sub-menu" style="display: block;">
+                        <li>
+                            <a href="{{url('admin/company')}}">
+                                <i class="am-icon-angle-right"></i>
+                                <span>公司介绍</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                             </a>
+                             <a href="{{url('admin/vision')}}">
+                                 <i class="am-icon-angle-right"></i>
+                                 <span>企业愿景</span>
+                             </a>
                         </li>
                     </ul>
                 </li>
@@ -240,7 +245,6 @@
 
     @yield('content')
 </div>
-
 
 <script src="{{asset('assets/js/jquery.min.js')}}"></script>
 <script src="{{asset('assets/js/amazeui.min.js')}}"></script>

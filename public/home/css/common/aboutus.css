@@ -1,0 +1,171 @@
+@media (min-width: 992px) {
+   .common {
+        margin-bottom: 5em;
+    }
+    .right_side .bgc {
+        background-color: #F5F5F5;
+        padding:3em;
+    }
+    .right_side .introduce_img img {
+        margin-bottom: 3em;
+    }
+    .right_side .vam_content .vam_detail {
+        margin-bottom: 3em;
+    }
+    /*团队右侧*/
+    .team_lists .person_list .person_img>img{
+        width:100%;
+    }
+    .team_lists .person_list .person_detail h3 {
+        padding-left:1em;
+    }
+    .team_lists .person_list .person_detail p {
+        margin-top: 2em;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .common {
+        margin-bottom: 3em;
+    }
+
+    .right_side .bgc {
+        background-color: #F5F5F5;
+        padding:2em;
+    }
+    .right_side .introduce_img img {
+        margin-bottom: 3em;
+    }
+    /*团队右侧*/
+    .team_lists .person_list .person_img>img{
+        width:100%;
+    }
+    .team_lists .person_list .person_detail h3 {
+        padding-left:1em;
+    }
+    .team_lists .person_list .person_detail p {
+        margin-top: 2em;
+    }
+}
+@media (max-width: 767px) {
+    .common {
+        margin-bottom: 1em;
+    }
+    .right_side .bgc {
+        background-color: #F5F5F5;
+    }
+    .introduce_content {
+        padding:1em;
+    }
+    /*团队右侧*/
+    .team_lists .person_list .person_img>img {
+        width:80%;
+        margin-left:10%;
+        margin-top:1.5em;
+    }
+    .team_lists .person_list .person_detail h3 {
+        text-align: center;
+    }
+    .team_lists .person_list .person_detail p {
+        padding-left: 1em;
+    }
+}
+
+.common .inner_banner>img {
+    width:100%;
+}
+.lists_bar>li, .introduce_content {
+    color:#767676;
+}
+/*左侧*/
+.left_side {
+    position: relative;
+    top:-3em;
+}
+.left_side .bgc {
+    min-height:59em;
+    width:95%;
+    background-color: #F5F5F5;
+}
+.common_bar {
+    width:100%;
+    background-color: #5C636E;
+    padding:.5em 0 1.8em 1.5em;
+    border:1px solid #fff;
+}
+.common_bar h3 {
+    color:#fff;
+}
+.common_bar h5 {
+    color:#78828D;
+}
+.common_list .lists_bar li{
+    width:100%;
+    padding:.8em 1.2em;
+    font-size: 1.2em;
+    background-color: #ECF0F1;
+    border:1px solid #fff;
+}
+.common_list .lists_bar li.active,.list_mini .mini_bar li.active {
+    background-color: #F8B400;
+    color:#fff;
+}
+.list_mini .mini_bar li.active {
+    border:1px solid #F8B400;
+}
+.list_mini .mini_bar li {
+    float:left;
+    padding:.3em 1em;
+    margin:1.5em 1em 2em 0;
+    border-radius: .5em;
+    border:1px solid #000;
+}
+/*公司介绍----右侧*/
+.right_side>h3 {
+    margin:1.1em 0;
+    font-size:1.4em;
+}
+.right_side .introduce_img img {
+    width:100%;
+}
+.introduce_content p {
+    line-height: 1.8em;
+}
+/*愿景使命----右侧*/
+.right_side .vam_img img {
+    width:100%;
+}
+.right_side .vam_content {
+    width:90%;
+    padding:3em 2em;
+    margin-left:5%;
+    background-color: #fff;
+    position: relative;
+    top:-6em;
+}
+.right_side .vam_content h5 {
+    font-size: 1.15em;
+    color:#71B100;
+}
+.right_side .vam_content h4 {
+    font-size:1.4em;
+    font-weight: bold;
+    line-height:2em;
+}
+.vam_detail p {padding:0;margin: 0;}
+.right_side .vam_content .vam_detail {
+    line-height: 1.8em;
+    overflow: hidden;
+}
+.max_height {
+    max-height: 7.2em;
+}
+.right_side .vam_content .read_more, .right_side .vam_content .read_up {
+    color:#F8B400;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*团队介绍----右侧*/
+.team_lists .person_list:not(:last-child) {
+    padding-bottom: 2em;
+}

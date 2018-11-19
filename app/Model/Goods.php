@@ -14,6 +14,11 @@ class Goods extends Model
 
     public function AllList()
     {
-        return self::all();
+        return self::where('status',0)->get();
+    }
+
+    public function productInfo($goods_id)
+    {
+        return self::where('id','=',$goods_id)->first();
     }
 }

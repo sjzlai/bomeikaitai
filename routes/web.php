@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
+
+Route::group(['namespace'=>'home','middleware'=>['web']],function (){
+    Route::get('/','IndexController@index');
+});
