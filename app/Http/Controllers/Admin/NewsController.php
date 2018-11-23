@@ -53,7 +53,7 @@ class NewsController extends Controller
         $data = $request->except('_token','id');
         $data['status'] = 0;
         $id = $request->input('id');
-        $news = $this->news->where('id','=',$id)->update($data);
+        $news = $this->news->where('id',$id)->update($data);
         if ($news){
             return redirect('/admin/news');
         }else{

@@ -31,13 +31,13 @@
 
                     <div class="am-g">
                         <div class="tpl-form-body tpl-form-line">
-                            <form class="am-form tpl-form-line-form" action="{{url('admin/product/editStore')}}" method="post" enctype="">
+                            <form class="am-form tpl-form-line-form" action="{{url('admin/news/editStore')}}" method="post" enctype="">
                                 {!! csrf_field() !!}
                                 <input type="hidden" name="id" value="{{$goods->id}}">
                                 <div class="am-form-group">
                                     <label for="user-name" class="am-u-sm-3 am-form-label">标题 <span class="tpl-form-line-small-title">Title</span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="prod_name" value="{{$goods->title}}" class="tpl-form-input" id="user-name" placeholder="请输入标题文字">
+                                        <input type="text" name="title" value="{{$goods->title}}" class="tpl-form-input" id="user-name" placeholder="请输入标题文字">
                                         <small>请填写标题文字10-20字左右。</small>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@
                                     <label for="user-intro" class="am-u-sm-3 am-form-label">产品内容 <span  class="tpl-form-line-small-title"> Content</span></label>
                                     <div class="am-u-sm-9">
                                         <!-- 编辑器容器 -->
-                                        <script id="container" name="prod_intr" type="text/plain" >@php echo html_entity_decode($goods->content) @endphp</script>
+                                        <script id="container" name="content" type="text/plain" > {!! $goods->content !!}</script>
                                         {{--<textarea class="" rows="10" id="user-intro" placeholder="请输入文章内容"></textarea>--}}
                                     </div>
                                 </div>

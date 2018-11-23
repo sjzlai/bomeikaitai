@@ -1,49 +1,13 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>博美开泰</title>
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../public/css/bootstrap.css">
-    <link rel="stylesheet" href="../public/css/cssreset.css">
-    <link rel="stylesheet" href="../public/css/header_footer.css">
-    <link rel="stylesheet" href="../public/css/common/aboutus.css">
-    <link rel="stylesheet" href="../public/css/common/product.css">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<nav class="navbar navbar-default navbar-fixed-top index_nav">
-   <div class="container">
-        <div class="navbar-header">
-            <a href="../index.html" class="my-logo"><img src="../public/images/logo.png" alt=""></a>
-            <a href="#menu" class="navbar-toggle" data-toggle="collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-        </div>
-        <div id="menu" class="collapse navbar-collapse">
-            <!--菜单-->
-            <ul class="nav navbar-nav navbar-right text-center">
-                <li><a href="../index.html">首页</a></li>
-                <li><a href="../aboutUs/company_introduce.html" >关于我们</a></li>
-                <li><a href="../product/product.html" class="active">产品管理</a></li>
-                <li><a href="../partner/business.html">业务合作</a></li>
-                <li><a href="../news/company_news.html">公司新闻</a></li>
-                <li><a href="./contact.html">联系我们</a></li>
-            </ul>
-        </div>
-   </div>
-</nav>
+@extends('home.layout.home')
+@section('style')
+    <link rel="stylesheet" href="{{asset('home/css/common/aboutus.css')}}">
+    <link rel="stylesheet" href="{{asset('home/css/common/product.css')}}">
+@endsection
+@section('content')
 <!--about_us start-->
 <div class="common product_manage">
     <div class="inner_banner">
-        <img src="../public/images/inner_banner.png" alt="">
+        <img src="{{asset('home/images/inner_banner.png')}}" alt="">
     </div>
     <div class="container">
         <div class="row">
@@ -67,7 +31,7 @@
                     <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">产品列表
                         <span class="caret"></span>
                     </button>
-                    <ul class="small lists_bar dropdown-menu role="menu" aria-labelledby="dropdownMenu1"">
+                    <ul class="small lists_bar dropdown-menu" role="menu"  aria-labelledby="dropdownMenu1">
                         <li role="presentation" class="active"><a href="javascript:void(0);">产品一</a></li>
                         <li role="presentation"><a href="javascript:void(0);">产品二</a></li>
                         <li role="presentation"><a href="javascript:void(0);">产品三</a></li>
@@ -81,20 +45,20 @@
                         <div class="col-xs-12 col-sm-9 img_big">
                             <div id="myCarousel" class="carousel slide">
                                 <div class="arrow left_arrow" href="#myCarousel" role="button" data-slide="prev">
-                                    <img src="../public/images/left.png" alt="">
+                                    <img src="{{asset('home/images/left.png')}}" alt="">
                                 </div>
                                 <div class="arrow right_arrow" href="#myCarousel" role="button" data-slide="next">
-                                    <img src="../public/images/right.png" alt="">
+                                    <img src="{{asset('home/images/right.png')}}" alt="">
                                 </div>
                                 <div class="bigimg_lists carousel-inner">
                                     <div class="item active">
-                                        <img src="../public/images/product_inner_big.png" alt="">
+                                        <img src="{{asset('home/images/product_inner_big.png')}}" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="../public/images/product_inner_big.png" alt="">
+                                        <img src="{{asset('home/images/product_inner_big.png')}}" alt="">
                                     </div>
                                     <div class="item">
-                                        <img src="../public/images/product_inner_big.png" alt="">
+                                        <img src="{{asset('home/images/product_inner_big.png')}}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -102,16 +66,16 @@
                         <div class="hidden-xs col-sm-3 img_small">
                             <ul>
                                 <li>
-                                    <img src="../public/images/product_inner_small.png" alt="">
+                                    <img src="{{asset('home/images/product_inner_small.png')}}" alt="">
                                 </li>
                                 <li>
-                                    <img src="../public/images/product_inner_small.png" alt="">
+                                    <img src="{{asset('home/images/product_inner_small.png')}}" alt="">
                                 </li>
                                 <li>
-                                    <img src="../public/images/product_inner_small.png" alt="">
+                                    <img src="{{asset('home/images/product_inner_small.png')}}" alt="">
                                 </li>
                                 <li>
-                                    <img src="../public/images/product_inner_small.png" alt="">
+                                    <img src="{{asset('home/images/product_inner_small.png')}}" alt="">
                                 </li>
                             </ul>
                         </div>
@@ -139,41 +103,7 @@
     </div>
 </div>    
 <!--about_us end-->
-<!--尾部-->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 bottom_logo text-center">
-                <img src="../public/images/logo.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-           <div class="hidden-xs col-sm-10 col-sm-push-1 text-center">
-                <ul class="bottom_path text-center">
-                    <li><a href="">首页</a></li>
-                    <li><a href="">关于我们</a></li>
-                    <li><a href="">产品管理</a></li>
-                    <li><a href="">业务合作</a></li>
-                    <li><a href="">公司新闻</a></li>
-                    <li><a href="">联系我们</a></li>
-                </ul>
-           </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 beian">
-                <p class="text-center">天津博美开泰生物科技医药有限公司 © 版权所有京ICP备案19283746&emsp;&emsp;&emsp;&emsp;京公网安备</p>
-            </div>
-        </div>
-    </div>
-    
-</footer>
-
-<script src="../public/js/jquery-1.11.3.js"></script>
-<script src="../public/js/bootstrap.js"></script>
-<script src="../public/js/common/product.js"></script>
-</body>
-</html>
+    @section('script')
+<script src="{{asset('home/js/common/product.js')}}"></script>
+@endsection
+@endsection
