@@ -21,11 +21,9 @@
                         {{--//pc--}}
                         <div class="common_list">
                             <ul class="big lists_bar">
-                                @foreach($goods as $good)
-                                <li><a href="{{url('product/detail',['id'=>$good->id])}}">{{$good->prod_name}}</a></li>
+                                @foreach($prod as $good)
+                                <a href="{{url('/product/detail',['id'=>$good->id])}}"><li>{{$good->prod_name}}</li>{</a>
                                 @endforeach
-                                {{--<li><a href="javascript:void(0);">产品二</a></li>--}}
-                                {{--<li><a href="javascript:void(0);">产品三</a></li>--}}
                             </ul>
                         </div>
                     </div>
@@ -38,9 +36,11 @@
                         </button>
                         {{--//链接--}}
                         <ul class="small lists_bar dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                            @foreach($goods as $good)
+                            @foreach($prod as $good)
                         <li role="presentation" class="active"><a href="{{url('product/detail',['id'=>$good->id])}}">产品一</a></li>
                             @endforeach
+                        {{--<li role="presentation"><a href="javascript:void(0);">产品二</a></li>--}}
+                        {{--<li role="presentation"><a href="javascript:void(0);">产品三</a></li>--}}
                         </ul>
                     </div>
                 </div>
@@ -48,7 +48,6 @@
 
             <div class="col-xs-12 col-md-9 product_right right_side">
                 <h3>产品管理</h3>
-                @foreach($goods as $prod)
                 <div class="bgc">
                     <div class="row product_imgs">
                         <div class="col-xs-12 img_big">
@@ -63,14 +62,14 @@
                                 </div>
                                 {{--//大图--}}
                                 <div class="bigimg_lists carousel-inner">
-                                    @foreach($prod->img as $key =>$img)
-                                        @if($key == 0)
-                                        <div class="item active">
-                                                <img src="{{asset($img['image'])}}" alt="">
-                                        </div>
+                                    @foreach($goods->img as $key =>$img)
+                                        @if($key ==  0)
+                                    <div class="item active">
+                                            <img src="{{asset($img['image'])}}" alt="">
+                                    </div>
                                         @else
                                             <div class="item">
-                                                <img src="{{asset($img['image'])}}" alt="">
+                                                <img src="{{asset($img->image)}}" alt="">
                                             </div>
                                         @endif
                                     @endforeach
@@ -83,7 +82,7 @@
 
                         <h5 class="product_way">自主研发</h5>
                         <div class="product_name">
-                            <h3 class="cname">{{$prod->prod_name}}</h3>
+                            <h3 class="cname">{{$goods->prod_name}}</h3>
                             <h3 class="usname">Rapid T4 DNA ligase</h3>
                         </div>
                         <div class="product_details">为了获得快速高效的连接效果，本试剂盒采用了一种特殊的高活力DNA连接酶，即Rapid T4 DNA ligase，确保在短时间内可以获得很好的连接效果。</div>
@@ -99,7 +98,7 @@
 
                     </div>
                 </div>
-                @endforeach
+
             </div>
 {{--产品信息结束--}}
             </div>

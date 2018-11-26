@@ -25,8 +25,8 @@ Route::group(['namespace'=>'home','middleware'=>['web']],function (){
 
     Route::get('/partner','PartnerController@index');
 
-    Route::get('/product/{id?}','ProductController@index');
-    Route::get('/product/detail/{id?}','ProductController@detail');
+    Route::any('/product','ProductController@proIndex');
+    Route::get('/product/detail/{id?}','ProductController@details');
 
     Route::get('/aboutus','AboutUsController@index');
     Route::get('/aboutus/vam','AboutUsController@vam');

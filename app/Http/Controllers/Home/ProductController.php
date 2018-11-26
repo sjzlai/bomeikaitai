@@ -18,24 +18,23 @@ class ProductController extends Controller
         $this->img = $img;
     }
 
-    public function index()
+    public function proIndex()
     {
-        $goods = $this->goods->where('status',0)->get();
-        foreach ($goods as $key =>$good){
-            $goods[$key]['img'] = $this->img->where('goods_id','=',$good->id)->get()->toArray();
-        }
-        $imgs =$this->img->where('goods_id','=',$good->id)->get();
+        $goods = $this->goods->where('status',0)->first();
+        $prod = $this->goods->where('status',0)->get();
+        $goods['img'] = $this->img->where('goods_id','=',$goods->id)->get();
+
 //        dd($goods);
-        return view('home.product.product',compact('goods','imgs'));
+        return view('home.product.product',compact('goods','prod'));
     }
 
-    public function detail($id)
+    public function details($id)
     {
-        $goods = $this->goods->where('id',$id)->get();
-        foreach ($goods as $key =>$good){
-            $goods[$key]['img'] = $this->img->where('goods_id','=',$id)->get()->toArray();
-        }
-        $imgs =$this->img->where('goods_id','=',$good->id)->get();
-        return view('home.product.detail',compact('product','imgs'));
+        $goods = $this->goods->where('id',$id)->first();
+        $goods['img'] = $this->img->where('goods_id','=',$id)->get();
+        $prod = $this->goods->where('status',0)->get();
+        //dd($goods);
+        return view('home.product.detail',compact('goods','prod'));
     }
+
 }
