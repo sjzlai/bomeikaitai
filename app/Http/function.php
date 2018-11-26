@@ -1,9 +1,8 @@
 <?php
 
 
-function picArray($file,$url_path='public/upload')
+function picArray($file,$url_path)
 {
-
     $rule = ['jpg', 'png', 'gif'];
     foreach ($file as $value) {
         if ($value->isValid()) {
@@ -16,6 +15,7 @@ function picArray($file,$url_path='public/upload')
             }
             $newName = md5(date("Y-m-d H:i:s") . $clientName) . "." . $entension;
             $path = $value->move($url_path, $newName);
+//            dd($path);
             $data[] = $url_path . '/' . $newName;
         }
     }

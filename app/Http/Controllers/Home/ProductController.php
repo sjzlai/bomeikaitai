@@ -15,12 +15,27 @@ class ProductController extends Controller
     public function __construct(Goods $goods,Img $img)
     {
         $this->goods = $goods;
+        $this->img = $img;
     }
 
     public function index()
     {
         $goods = $this->goods->where('status',0)->get();
-        $img = $this->img->where('status',0)->get();
-        return view('home.product.product',compact('goods','img'));
+        foreach ($goods as $key =>$good){
+            $goods[$key]['img'] = $this->img->where('goods_id','=',$good->id)->get()->toArray();
+        }
+        $imgs =$this->img->where('goods_id','=',$good->id)->get();
+//        dd($goods);
+        return view('home.product.product',compact('goods','imgs'));
+    }
+
+    public function detail($id)
+    {
+        $goods = $this->goods->where('id',$id)->get();
+        foreach ($goods as $key =>$good){
+            $goods[$key]['img'] = $this->img->where('goods_id','=',$id)->get()->toArray();
+        }
+        $imgs =$this->img->where('goods_id','=',$good->id)->get();
+        return view('home.product.detail',compact('product','imgs'));
     }
 }

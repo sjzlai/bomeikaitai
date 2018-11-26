@@ -53,9 +53,9 @@ class ProductController extends Controller
     {
           $img = $request->except('_token','goods_id');
           $data = $request->input('goods_id');
-          $path = '/public/upload';
+          $path = 'upload';
           $da = picArray($img['img'],$path);
-
+          //dd($img['img']);
           foreach ($da as $value){
               $a['image'] = $value;
               $a['goods_id'] = $data;
