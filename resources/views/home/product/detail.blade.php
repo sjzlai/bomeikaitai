@@ -22,7 +22,11 @@
                         <div class="common_list">
                             <ul class="big lists_bar">
                                 @foreach($prod as $good)
-                                    <a href="{{url('product/detail',['id'=>$good->id])}}"><li>{{$good->prod_name}}</li></a>
+                                    @if($good->id == $goods->id)
+                                    <li class="active"><a href="{{url('product/detail',['id'=>$good->id])}}">{{$good->prod_name}}</a></li>
+                                    @else
+                                        <li><a href="{{url('product/detail',['id'=>$good->id])}}">{{$good->prod_name}}</a></li>
+                                    @endif
                                 @endforeach
                                 {{--<li><a href="javascript:void(0);">产品二</a></li>--}}
                                 {{--<li><a href="javascript:void(0);">产品三</a></li>--}}

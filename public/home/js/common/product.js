@@ -2,15 +2,17 @@ $(function(){
     var moveAc = function moveAc(){
         var bigScreen = $('.big>li');
         var smallScreen = $('.small>li');
-        bigScreen.on('click',function(e){
-            e.preventDefault();
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
+        bigScreen.on('click',function(){
+            // e.preventDefault();
+            $(this).find('li').addClass('active');
+            // $(this).siblings().removeClass('active');
+            $(this).parent().siblings().find('li').removeClass('active');
         })
-        smallScreen.on('click',function(e){
-            e.preventDefault();
+        smallScreen.on('click',function(){
+            // e.preventDefault();
             $(this).addClass('active');
-            $(this).siblings().removeClass('active');
+            // $(this).siblings().removeClass('active');
+            $(this).parent().siblings().find('li').removeClass('active');
         })
     }
     moveAc();
